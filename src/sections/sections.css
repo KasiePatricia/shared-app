@@ -1,0 +1,54 @@
+.main-dashboard {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-color: blueviolet;
+    min-height: calc(100% - 80px);
+}
+
+.notification {
+    background-color: lightskyblue;
+}
+
+.nav-bar {
+    display: none;
+    background-color: #74e22b;
+}
+
+/* Tablet styles */
+@media (min-width: 601px) {
+    .main-dashboard {
+        grid-template-columns: 200px 200px 1fr;
+    }  
+}
+
+/* Desktop styles */
+@media (min-width: 1023px) {
+    .main-dashboard {
+        grid-template-columns: 266px 324px 1fr;
+    }
+    .nav-bar {
+        display: block;
+    }
+}
+
+/* Main dashboard */
+.primary{
+    display: none;
+    background-color: rgb(37, 89, 121);
+}
+
+.message-list{
+    background-color: rgb(69, 165, 143);
+}
+.chat{
+    background-color: rgb(41, 222, 110);
+}
+
+/* Tablet styles */
+@media (min-width: 601px) {
+    .primary{
+        display: block;
+    }
+}
+
+/* Nave bar */

@@ -1,0 +1,23 @@
+.main-container {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/* Large mobile styles */
+@media (min-width: 425px) {
+}
+
+/* Tablet styles */
+@media (min-width: 601px) {
+    
+}
+
+/* Desktop styles */
+@media (min-width: 1023px) {
+    .main-container {
+        grid-template-columns: 88px 1fr;
+      background-color: lightcoral;
+      font-size: 22px;
+    }
+}
