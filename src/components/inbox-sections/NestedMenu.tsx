@@ -28,19 +28,21 @@ const NestedMenu: React.FC = () => {
   const handleBtnClick = (item: MenuItem) => {
     setOpenMenu(openMenu === item ? null : item);
     // navigate(`/inbox/${item}`)
-  }
+  };
 
   return (
     <aside className="nested-menu">
-
-      
       {/* Mobile menu */}
-      <div className='mobile-menu-wrap overflow-auto scroll-bar-hidden'>
+      <div className="mobile-menu-wrap overflow-auto scroll-bar-hidden">
         <ul className="mobile-menu-list">
           {(Object.keys(menu) as MenuItem[]).map((item, index) => (
-              <li key={index} className={`mobile-menu-item ${location.pathname.startsWith("/inbox/" + item.split(" ")[0].toLowerCase()) ? 'active' : ''}`}>
-                <button className='mobile-menu-btn' onClick={() => handleBtnClick(item)}>{item.split(" ")[0]}</button>
-              </li>
+            <li
+              key={index}
+              className={`mobile-menu-item ${location.pathname.startsWith('/inbox/' + item.split(' ')[0].toLowerCase()) ? 'active' : ''}`}>
+              <button className="mobile-menu-btn" onClick={() => handleBtnClick(item)}>
+                {item.split(' ')[0]}
+              </button>
+            </li>
           ))}
         </ul>
         {openMenu && (
@@ -56,12 +58,7 @@ const NestedMenu: React.FC = () => {
                     to={subItem.link}
                     onClick={() => handleSubmenuClick(subItem.name)}
                     className={` `}>
-                    <img
-                      src={subItem.icon}
-                      alt={subItem.name}
-                      width={16}
-                      height={16}
-                    />
+                    <img src={subItem.icon} alt={subItem.name} width={16} height={16} />
                   </Link>
                 </li>
               ))}
@@ -69,13 +66,18 @@ const NestedMenu: React.FC = () => {
           </div>
         )}
       </div>
-      
+
       <button className="more-btn center">
         <img src={arrowIcon} alt="close menu" />
       </button>
 
       {/* Desktop menu */}
-      <Button text="Compose" icon={addCircleIcon} onClick={handleClick} className='hide-btn' />
+      <Button
+        text="Compose"
+        icon={addCircleIcon}
+        onClick={handleClick}
+        className="hide-btn"
+      />
       <ul className="menu-list">
         {(Object.keys(menu) as MenuItem[]).map((item, index) => (
           <li key={index} className="menu-item">

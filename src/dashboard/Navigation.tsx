@@ -7,7 +7,7 @@ const Navigation = ({ handleMenu }: NotifyProps) => {
   return (
     <section className="navigation">
       <div className="show-nav"></div>
-      <div className='flex-center gap-8 nav-left-group'>
+      <div className="flex-center gap-8 nav-left-group">
         <button onClick={handleMenu} className="menu-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"

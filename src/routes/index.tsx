@@ -65,7 +65,7 @@ const Home = () => {
               <Route path="bob" element={<Bob />} />
               <Route path="charlie" element={<Charlie />} />
             </Route>
-            <Route path="group" element={<GroupMessage />} >
+            <Route path="group" element={<GroupMessage />}>
               <Route index element={<Navigate replace to="dev" />} />
               <Route path="dev" element={<Dev />} />
               <Route path="marketing" element={<Marketing />} />

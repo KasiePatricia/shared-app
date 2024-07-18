@@ -69,7 +69,7 @@
 }
 
 .nav-list {
-  padding-inline: 0.25rem; 
+  padding-inline: 0.25rem;
 }
 
 .nav-list li {
@@ -248,7 +248,7 @@
   }
 
   .nav-list {
-    padding-inline: 0; 
+    padding-inline: 0;
   }
 }
 
@@ -290,7 +290,6 @@
 
 /* Desktop styles */
 @media (min-width: 1023px) {
-
   .hide-nav {
     position: absolute;
     right: -12px;

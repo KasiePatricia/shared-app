@@ -27,7 +27,7 @@ const Dashboard = () => {
         navRef={navRef}
       />
 
-      <section className='content-section'>
+      <section className="content-section">
         <Navigation handleMenu={handleMenu} />
         <Outlet />
       </section>

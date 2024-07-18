@@ -5,7 +5,7 @@ interface ButtonProps {
   className?: string;
 }
 // Button component
-const Button: React.FC<ButtonProps> = ({ text, icon, onClick, className="" }) => {
+const Button: React.FC<ButtonProps> = ({ text, icon, onClick, className = '' }) => {
   return (
     <button className={`${className} custom-button`} onClick={onClick}>
       {icon && <img src={icon} alt="button icon" className="button-icon" />}
