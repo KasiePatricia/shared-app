@@ -1,0 +1,29 @@
+/* Button.css */
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 234px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--light);
+}
+
+.custom-button:hover {
+  background-color: var(--focus-outline-color);
+  border: 1px solid var(--focus-outline-color);
+}
+
+.button-icon {
+  margin-right: 0.625rem;
+}

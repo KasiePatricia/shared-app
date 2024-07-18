@@ -1,0 +1,29 @@
+.inbox-dashboard {
+  min-height: calc(100% - 80px);
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Tablet styles */
+@media (min-width: 601px) {
+  .inbox-dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+/*small Desktop styles */
+@media (min-width: 900px) {
+  .inbox-dashboard {
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1026px) {
+  .inbox-dashboard {
+    grid-template-columns: 266px 1fr;
+  }
+}

@@ -1,0 +1,44 @@
+:root {
+  /* color */
+  --primary: #1967d2;
+  --light: white;
+  --bg: #f7f7f7;
+  --bg-gray: #f5f5f5;
+  --secondary-bg: #f4f4f4;
+
+  --text-black: #000000;
+  --text-gray: #666666;
+  --text-secondary: #737373;
+  --text-dark-gray: #4f4f4f;
+  --red: #da2c38;
+  --border-gray: #dcdcdc;
+  --border-lighter-gray: #ebebeb;
+  --light-gray: #828282;
+  --light-blue: #e6edff;
+  --blue: #004fff;
+  --focus-bg: #e0e0e0;
+  --focus-outline-color: #007bff;
+  --dark-gray: #667085;
+
+  /* font */
+  --font-family: 'Manrope', sans-serif;
+
+  /* border */
+  --tag-border-radius: 50px;
+  --input-border-radius: 4px;
+  --button-border-radius: 4px;
+  --border-radius: 8px;
+
+  /* shadow */
+  --tag-box-shadow: 0px 2.1118011474609375px 4.223602294921875px 0px
+      rgba(17, 24, 28, 0.04),
+    0px 1.0559005737304688px 2.1118011474609375px -1.0559005737304688px rgba(17, 24, 28, 0.08),
+    0px 0px 0px 1.0559005737304688px rgba(156, 163, 175, 0.17);
+
+  --logo: url('@/assets/images/logo.svg');
+
+  /* hamburger */
+  --hamburger: url('@/assets/icons/dark/hamburger-dark.svg?url');
+
+  --hamburger-close: url('@/assets/icons/close.svg?url');
+}
